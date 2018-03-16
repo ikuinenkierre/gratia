@@ -1,0 +1,51 @@
+.book {
+  position: relative;
+  padding-top: 2.2rem;
+  padding-bottom: 2.1rem;
+  
+  text-align: center;
+  background-color: $primary-color;
+}
+
+.book__img {
+  margin-left: -3rem;
+}
+
+.book__text {
+  margin: 0;
+  margin-top: .5rem;
+  margin-bottom: 1.4rem;
+
+  font-family: $secondary-font-family;
+  font-size: 1.5rem;
+  color: #8b909d;
+}
+
+.book__btn {
+  display: inline-block;
+  margin-bottom: 2.5rem;
+  
+  border-color: #263045;
+  line-height: 2.6rem;
+  transition: .4s;
+}
+
+.book__btn:hover {
+  color: $secondary-color;
+  background-color: #263045;
+}
+
+.book__down {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .book__btn {
+    position: absolute;
+    width: 12.45rem;
+    height: 2.6rem;
+    right: 6rem;
+    bottom: 6rem;
+    margin-bottom: 0;
+  }
+}
