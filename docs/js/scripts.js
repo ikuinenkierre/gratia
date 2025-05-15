@@ -1,0 +1,1 @@
+var toggleButton=document.querySelector(".main-header__toggle"),mainMenu=document.querySelector(".main-header__pages");toggleButton.addEventListener("click",function(e){e.preventDefault(),toggleButton.classList.toggle("main-header__toggle--close"),mainMenu.classList.toggle("main-header__pages--open")});

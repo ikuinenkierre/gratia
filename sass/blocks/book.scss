@@ -1,0 +1,136 @@
+.book {
+  position: relative;
+  padding-top: 2.2rem;
+  padding-bottom: 2.1rem;
+  
+  text-align: center;
+  background-color: $primary-color;
+}
+
+.book__title {
+  position: absolute;
+}
+
+.book__img-wrapper {
+  position: relative;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 1.8rem;
+}
+
+.book__title {
+  position: absolute;
+  font-family: $primary-font-family;
+  font-size: 2rem;
+  font-weight: 700;
+  color: $primary-color;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, .8);
+  text-transform: uppercase;
+}
+
+.book__title_details {
+  top: 0.1rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.book__title_ma {
+  top: 45%;
+  left: -2.5rem;
+}
+
+.book__title_ke {
+  top: 45%;
+  right: -2.1rem;
+}
+
+.book__title_perfection {
+  bottom: -.5rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.book__img {
+  position: relative;
+  z-index: 10;
+}
+
+.book__text {
+  margin: 0;
+  margin-top: .5rem;
+  margin-bottom: 1.4rem;
+
+  font-family: $secondary-font-family;
+  font-size: 1.5rem;
+  color: #8b909d;
+}
+
+.book__btn {
+  display: inline-block;
+  margin-bottom: 2.5rem;
+  
+  border-color: #263045;
+  line-height: 2.6rem;
+  transition: .4s;
+}
+
+.book__btn:hover {
+  color: $secondary-color;
+  background-color: #263045;
+}
+
+.book__down {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .book {
+    padding-top: 5.2rem;
+  }
+
+  .book__img-wrapper {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 6rem;
+  }
+
+  .book__title_ma {
+    top: 51%;
+  }
+  
+  .book__title_ke {
+    top: 51%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .book__img-wrapper {
+    max-width: 751px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .book__title {
+    font-size: 5rem;
+    text-shadow: 0 0 19px rgba(0, 0, 0, .6);
+  }
+
+  .book__title_ma {
+    left: -6rem;
+  }
+  
+  .book__title_ke {
+    right: -5rem;
+  }
+
+  .book__btn {
+    position: absolute;
+    width: 12.45rem;
+    height: 2.6rem;
+    right: 6rem;
+    bottom: 6rem;
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,156 @@
+.products {
+  padding-top: 8.1rem;
+
+  text-align: center;
+}
+
+.products__title {
+  margin: 0;
+  margin-bottom: 1.2rem;
+
+  font-family: $primary-font-family;
+  font-size: 2.9rem;
+  line-height: 4.25rem;
+  color: $primary-color;
+  text-transform: uppercase;
+}
+
+.products__desc {
+  margin: 0;
+  margin-bottom: 3.5rem;
+
+  font-family: $secondary-font-family;
+  font-size: 1.5rem;
+  color: $text-color;
+}
+
+.products__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.products__link {
+  position: relative;
+  display: block;
+  padding: 4.15rem 1rem 2rem 1rem;
+  margin: 0 auto;
+
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.products__item-title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 6.4rem;
+
+  font-family: $primary-font-family;
+  font-size: 2.4rem;
+  line-height: 4.25rem;
+  color: $primary-color;
+  text-transform: uppercase;
+  transition: .4s;
+}
+
+.products__item-title::after {
+  content: "";
+  position: absolute;
+  width: 2.15rem;
+  height: 1px;
+  bottom: .25rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background-color: #ffffff;
+}
+
+.products__item-desc {
+  font-family: $secondary-font-family;
+  color: $text-color;
+}
+
+
+.products__item:nth-child(2n+1) {
+  .products__item-title {
+    margin-bottom: 1rem;
+
+    color: $secondary-color;
+  }
+
+  .products__item-title::after {
+    background-color: $secondary-color;
+  }
+
+  .products__item-desc {
+    color: #ffffff;
+  }
+}
+
+.products__item--desserts .products__link {
+  background-image: url("../img/desserts.jpg");
+}
+
+.products__item--smoothies .products__link {
+  background-image: url("../img/smoothies.jpg");
+}
+
+.products__item--breakfast .products__link {
+  background-image: url("../img/breakfast.jpg");
+}
+
+.products__link:hover .products__item-title {
+  transform: scale(1.05);
+}
+
+.products__other {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 2.6rem;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: .9rem;
+  line-height: 4.25rem;
+  color: $secondary-color;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  transition: .4s;
+}
+
+.products__other::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: .7rem;
+  left: 0;
+  
+  background-color: $secondary-color;
+  transition: .4s;
+}
+
+.products__other:hover {
+  color: $primary-color;
+}
+
+.products__other:hover::after {
+  background-color: $primary-color;
+}
+
+@media (min-width: $desktop-width) {
+  .products__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .products__item--smoothies .products__link {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+

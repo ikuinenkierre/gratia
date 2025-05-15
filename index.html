@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400i|Montserrat:700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script>
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.js" async></script>
+  </head>
+  <body>
+
+    <div style="display: none">
+      <include src="docs/img/sprite.svg"></include>
+    </div>
+
+    <header class="main-header">
+      <div class="main-header__wrapper">
+        <nav class="main-header__nav">
+          <a class="main-header__logo">
+            <svg class="main-header__logo-icon" width="34" height="34">
+              <use xlink:href="#logo-icon"></use>  
+            </svg>
+            <span>Gratia</span>
+          </a>
+          <button class="main-header__toggle">
+            <span class="visually-hidden">Menu toggle button</span>
+            <span class="main-header__toggle-bar main-header__toggle-bar--top"></span>
+            <span class="main-header__toggle-bar main-header__toggle-bar--center"></span>
+            <span class="main-header__toggle-bar main-header__toggle-bar--bottom"></span>
+          </button>
+          <ul class="main-header__pages">
+            <li class="main-header__item">
+              <a href="#" class="main-header__link">About</a>
+            </li>
+            <li class="main-header__item">
+              <a href="#" class="main-header__link">Menu</a>
+            </li>
+            <li class="main-header__item">
+              <a href="#" class="main-header__link">Gallery</a>
+            </li>
+            <li class="main-header__item">
+              <a href="#" class="main-header__link">Contact</a>
+            </li>
+          </ul>
+        </nav>   
+      </div>
+    </header>
+
+    <main>
+      <h1 class="visually-hidden">Gratia restourant website</h1>
+      <section class="book">
+        <div class="book__img-wrapper">
+            <span class="book__title book__title_details">Details</span>
+            <span class="book__title book__title_ma">ma</span>
+            <span class="book__title book__title_ke">ke</span>
+            <span class="book__title book__title_perfection">perfection</span>
+            <img class="book__img" src="img/board.png" alt="Details make perfection">
+        </div>
+        <p class="book__text">and perfection is not a detail</p>
+        <a href="#" class="btn book__btn">Book a table</a>
+        <a href="#products" class="book__down">
+          <img src="img/down.png" alt="Go further">
+        </a>
+      </section>
+
+      <section class="products" id="products">
+        <h2 class="products__title">Perfection</h2>
+        <p class="products__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <ul class="products__list">
+          <li class="products__item products__item--desserts">
+            <a href="" class="products__link">
+              <h3 class="products__item-title">Desserts</h3>
+              <p class="products__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>  
+            </a>
+          </li>
+          <li class="products__item products__item--smoothies">
+            <a href="" class="products__link">
+              <h3 class="products__item-title">Smoothies</h3>
+              <p class="products__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>  
+            </a>
+          </li>
+          <li class="products__item products__item--breakfast">
+            <a href="" class="products__link">
+              <h3 class="products__item-title">Breakfast</h3>
+              <p class="products__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>  
+            </a>
+          </li>
+        </ul>
+        <a href="#" class="products__other">Check other offers</a>
+      </section>  
+
+      <section class="details">
+        <div class="details__wrapper">
+          <div class="details__block">
+            <h2 class="details__title">Details</h2>
+            <p class="details__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="btn details__btn">Preparation of our dishes</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="facilities">
+        <h2 class="facilities__title">How we reach this?</h2>
+        <p class="facilities__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <ul class="facilities__list">
+          <li class="facilities__item">
+            <h3 class="facilities__item-title">Different Locations</h3>
+            <p class="facilities__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </li>
+          <li class="facilities__item">
+            <h3 class="facilities__item-title">Fresh products</h3>
+            <p class="facilities__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </li>
+          <li class="facilities__item">
+            <h3 class="facilities__item-title">The best from the beginning</h3>
+            <p class="facilities__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="main-footer__logo-wrapper">
+        <a href="#" class="main-footer__logo" alt="На главную">
+          <svg class="main-footer__logo-icon" width="81" height="81">
+            <use xlink:href="#logo-icon"></use>
+          </svg>
+        </a>  
+      </div>
+      <a href="index.html" class="main-footer__title">Gratia Restaurant</a>
+      <ul class="main-footer__social">
+        <li class="main-footer__social-item">
+          <a class="main-footer__social-link" href="#">
+            <span class="visually-hidden">We're on Facebook</span>
+            <svg class="main-footer__social-link-icon" width="40" height="40">
+              <use xlink:href="#fb-icon"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="main-footer__social-item">
+          <a class="main-footer__social-link" href="#">
+            <span class="visually-hidden">We're on Twitter</span>
+            <svg class="main-footer__social-link-icon" width="40" height="40">
+              <use xlink:href="#twitter-icon"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="main-footer__social-item">
+          <a class="main-footer__social-link" href="#">
+            <span class="visually-hidden">We're on Instagram</span>
+            <svg class="main-footer__social-link-icon" width="40" height="40">
+              <use xlink:href="#insta-icon"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

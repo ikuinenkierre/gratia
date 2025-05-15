@@ -1,0 +1,45 @@
+.details {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  background-image: url(../img/details.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.details__wrapper {
+  padding: 1rem;
+  max-width: 20rem;
+  margin: 0 auto;
+  
+  background-color: #ffffff;
+}
+
+.details__block {
+  padding: 1rem;
+
+  text-align: center;
+  border: 1px solid #e2e3e6;
+}
+
+.details__title {
+  margin: 0;
+
+  font-family: $primary-font-family;
+  font-size: 2.4rem;
+  line-height: 4.25rem;
+  color: $primary-color;
+  text-transform: uppercase;
+}
+
+.details__desc {
+  margin: 0;
+  margin-bottom: 1rem;
+
+  font-family: $secondary-font-family;
+  color: $text-color;
+}
+
+.details__btn {
+  display: inline-block;
+}

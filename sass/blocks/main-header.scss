@@ -1,0 +1,127 @@
+.main-header {
+  background-color: $primary-color;
+}
+
+.main-header__wrapper {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.main-header__nav {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 4.1rem;
+}
+
+.main-header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: .5rem;
+  font-family: $primary-font-family;
+  color: #ffffff;
+  letter-spacing: .1rem;
+
+  span {
+    padding-left: 1rem;
+  }
+}
+
+.main-header__logo-icon {
+  margin-left: -2rem;
+}
+
+.main-header__toggle {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 0;
+
+  width: 1.5rem;
+  height: 1.25rem;
+  top: 1.5rem;
+  right: 0rem;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.main-header__toggle-bar {
+  display: block;
+  height: 0.15rem;
+
+  background-color: #ffffff;; 
+  transition: 0.4s;
+}
+
+.main-header__toggle-bar--center {
+  transition: 0s;
+}
+
+.main-header__toggle--close {
+  .main-header__toggle-bar--top {
+    transform: rotate(-45deg) translate(-.45rem, .35rem);
+  }
+
+  .main-header__toggle-bar--center {
+    visibility: hidden;
+  }
+
+  .main-header__toggle-bar--bottom {
+    transform: rotate(45deg) translate(-.4rem, -.35rem);
+  }
+}
+
+.main-header__pages {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-header__pages--open {
+  display: block;
+}
+
+.main-header__link {
+  display: block;
+  padding-bottom: .5rem;
+  padding-top: .5rem;
+
+  font-family: $primary-font-family;
+  font-size: .95rem;
+  color: #ffffff;
+  text-align: center;
+  transition: .4s;
+}
+
+.main-header__link:hover {
+  color: $text-color;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main-header__toggle {
+    display: none;
+  }
+
+  .main-header__logo-icon {
+    margin-left: 0;
+  }
+
+  .main-header__pages {
+    display: flex;
+  }
+
+  .main-header__link {
+    margin-left: 4.3rem;
+  }
+}

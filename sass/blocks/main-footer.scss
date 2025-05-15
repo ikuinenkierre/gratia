@@ -1,0 +1,83 @@
+.main-footer {
+  text-align: center;
+}
+
+.main-footer__logo-wrapper {
+  position: relative;
+}
+
+.main-footer__logo-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+
+  background-color: #e6e6e6;
+  z-index: -1;
+}
+
+.main-footer__logo {
+  display: inline-block;
+  padding: .5rem;
+  
+  background-color: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 50%;
+}
+
+.main-footer__logo-icon {
+  display: block;
+}
+
+.main-footer__title {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  margin-bottom: 5rem;
+
+  font-family: $primary-font-family;
+  font-size: .9rem;
+  line-height: 1.8rem;
+  color: $primary-color;
+  transition: .4s;
+}
+
+.main-footer__title:hover {
+  color: $secondary-color;
+}
+
+.main-footer__title::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -1rem;
+  left: 0;
+
+  background-color: #e7e7e7;
+}
+
+.main-footer__social {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10rem;
+  display: flex;
+  justify-content: center;
+}
+
+.main-footer__social-item {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.main-footer__social-link-icon {
+  fill: #e7e7e7;
+  transition: .4s;
+}
+
+.main-footer__social-link:hover .main-footer__social-link-icon {
+  fill: $secondary-color;
+}
